@@ -251,6 +251,10 @@
     if (!('serviceWorker' in navigator)) return;
     if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') return;
     navigator.serviceWorker.register('sw.js').catch(function () { /* 登録できなくても表示は続ける */ });
+    // 保存済みデータが（別サイトのService Workerなどに）消されていたら保存し直してもらう
+    navigator.serviceWorker.ready.then(function (reg) {
+      if (reg.active && navigator.onLine !== false) reg.active.postMessage({ type: 'ensure-cache' });
+    }).catch(function () {});
   }
 
   window.Bousai = {

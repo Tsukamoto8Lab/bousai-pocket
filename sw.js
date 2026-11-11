@@ -5,7 +5,7 @@
    - ページ・CSS・JSは「保存済みをすぐ表示し、裏で更新」。緊急時でも速く開く。 */
 'use strict';
 
-var VERSION = '2026-11-12';
+var VERSION = '2026-11-12.2';
 var CORE_CACHE = 'bousai-core-' + VERSION;
 var DATA_CACHE = 'bousai-data';
 var NETWORK_TIMEOUT_MS = 3500;
@@ -53,13 +53,30 @@ function precacheData() {
   });
 }
 
+function precacheCore() {
+  return caches.open(CORE_CACHE).then(function (cache) {
+    return cache.addAll(CORE_FILES.map(function (u) { return new Request(u, { cache: 'reload' }); }));
+  });
+}
+
 self.addEventListener('install', function (event) {
-  event.waitUntil(Promise.all([
-    caches.open(CORE_CACHE).then(function (cache) {
-      return cache.addAll(CORE_FILES.map(function (u) { return new Request(u, { cache: 'reload' }); }));
-    }),
-    precacheData()
-  ]).then(function () { return self.skipWaiting(); }));
+  event.waitUntil(Promise.all([precacheCore(), precacheData()]).then(function () { return self.skipWaiting(); }));
+});
+
+/* 保存済みデータの自己修復。
+   GitHub Pages では同じアカウントの別サイトとキャッシュ置き場（オリジン）を共有するため、
+   別サイトの Service Worker に削除されることがある。ページを開くたびに確かめ、欠けていれば保存し直す。 */
+self.addEventListener('message', function (event) {
+  if (!event.data || event.data.type !== 'ensure-cache') return;
+  event.waitUntil(
+    caches.open(CORE_CACHE).then(function (cache) { return cache.keys(); }).then(function (keys) {
+      return keys.length < CORE_FILES.length ? precacheCore() : null;
+    }).then(function () {
+      return caches.open(DATA_CACHE).then(function (cache) { return cache.match(REGIONS_INDEX); });
+    }).then(function (hit) {
+      return hit ? null : precacheData();
+    }).catch(function () { /* 通信できないときは次の機会に */ })
+  );
 });
 
 self.addEventListener('activate', function (event) {
