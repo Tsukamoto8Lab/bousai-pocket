@@ -1,0 +1,6 @@
+# 手元だけで使うもの（公開しない）
+.claude/
+bousai-pocket-requirements.md
+
+# macOS
+.DS_Store

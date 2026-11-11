@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>冷蔵庫用 印刷シート｜防災ポケット</title>
+<meta name="description" content="A4・1枚に収まる冷蔵庫用の防災シート。近くの避難先3つ、緊急連絡先、家族の集合場所（手書き）、備蓄の最小リスト。">
+<meta name="theme-color" content="#FFD60A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+<script src="assets/sheet.js" defer></script>
+</head>
+<body class="sheet-page">
+<div class="band" role="region" aria-label="最新の避難情報">
+  <div class="band-inner">
+    <span class="band-text"><span class="short">最新情報</span><span class="long">最新の避難情報はここで確認</span></span>
+    <a href="https://www.osaka.dmacs.jp/" target="_blank" rel="noopener">大阪防災アプリ</a>
+    <a href="https://www.osaka-bousai.net/27100/index.html" target="_blank" rel="noopener">おおさか防災ネット</a>
+  </div>
+</div>
+<div class="offline-note">通信なしで表示中です。前に保存した情報を表示しています。</div>
+<header class="site-head">
+  <div class="site-head-inner">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">防</span><span>防災ポケット<small>大阪市大正区・鶴町</small></span></a>
+    <nav class="head-links" aria-label="すぐ使うページ"><a href="shelters.html">避難先</a><a href="contacts.html">連絡先</a></nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="sheet-controls">
+    <h1>冷蔵庫に貼る印刷シート</h1>
+    <p class="lead">スマホが使えないとき（電池切れ・停電・通信障害）のための紙のバックアップです。A4用紙1枚に印刷して、冷蔵庫や玄関に貼っておきます。</p>
+    <div class="box" style="margin-top:14px">
+      <h2 style="font-size:20px">載せる避難先を3つ選ぶ</h2>
+      <p class="fac-qual">はじめは鶴町の代表的な避難先が入っています。自宅から近い所に変えてください。選んだ内容は、この端末にだけ保存されます。</p>
+      <div id="pickers"><p class="empty">読み込み中…</p></div>
+    </div>
+    <p class="more-link"><button type="button" class="btn dark big" data-print>🖨️ A4で印刷する</button></p>
+    <p class="fac-qual">印刷の設定で「用紙：A4」「倍率：100%（または用紙に合わせる）」を選んでください。下が印刷される内容です。</p>
+  </div>
+
+  <article class="sheet" aria-label="印刷される内容">
+    <header class="sheet-head">
+      <p class="sheet-title">防災シート<span>大阪市大正区</span></p>
+      <p class="sheet-warn">事前準備用の参考情報です。実際の災害時は、大阪市・気象庁の最新情報と避難指示を優先してください。</p>
+    </header>
+
+    <section class="sheet-block sheet-shelters">
+      <h2>🏢 近くの避難先</h2>
+      <ol id="sheet-shelters"><li>読み込み中…</li></ol>
+    </section>
+
+    <div class="sheet-grid">
+      <section class="sheet-block">
+        <h2>📞 緊急連絡先</h2>
+        <div class="sheet-calls">
+          <p><b>110</b>警察</p>
+          <p><b>119</b>消防・救急</p>
+          <p><b>171</b>伝言ダイヤル</p>
+        </div>
+        <p class="sheet-171">171 → 残す<span class="key">1</span>・聞く<span class="key">2</span> → 被災地の人の番号 → <span class="key">1</span></p>
+        <table class="sheet-tel">
+          <tr><th>大正区役所（防災）</th><td>06-4394-9958</td></tr>
+          <tr><th>大正警察署</th><td>06-6555-1234</td></tr>
+          <tr><th>大正消防署</th><td>06-6552-0119</td></tr>
+          <tr><th>停電（関西電力）</th><td>0800-777-3081</td></tr>
+          <tr><th>ガスもれ（大阪ガス）</th><td>0120-0-19424</td></tr>
+        </table>
+      </section>
+
+      <section class="sheet-block">
+        <h2>👪 家族の集合場所（手書き）</h2>
+        <dl class="sheet-write">
+          <dt>集合場所（第1）</dt><dd></dd>
+          <dt>集合場所（第2）</dt><dd></dd>
+          <dt>171で伝言を残す番号</dt><dd></dd>
+          <dt>家族・親戚の連絡先</dt><dd></dd><dd></dd><dd></dd>
+        </dl>
+      </section>
+
+      <section class="sheet-block">
+        <h2>🎒 備蓄の最小リスト</h2>
+        <ul class="sheet-check">
+          <li>水 1人1日3L × 3日分以上</li>
+          <li>食料 3日分以上（できれば1週間）</li>
+          <li>携帯トイレ・簡易トイレ</li>
+          <li>懐中電灯・ラジオ・予備の電池</li>
+          <li>常備薬・お薬手帳のコピー</li>
+          <li>カセットコンロ・ボンベ</li>
+          <li>現金（10円玉も）</li>
+        </ul>
+      </section>
+
+      <section class="sheet-block">
+        <h2>⚠️ まずやること</h2>
+        <dl class="sheet-first">
+          <dt>🌏 地震</dt><dd>頭を守る → 火を止め靴をはく → 強い・長い揺れなら3階以上へ</dd>
+          <dt>🌊 津波・水害</dt><dd>遠くより高く、3階以上へ。歩いて。解除まで戻らない</dd>
+          <dt>🔥 火事</dt><dd>大声で知らせる → 119番 → 天井に火が届いたら逃げる</dd>
+          <dt>🌀 台風・大雨</dt><dd>レベル4「避難指示」までに必ず避難</dd>
+        </dl>
+      </section>
+    </div>
+
+    <footer class="sheet-foot">
+      <p id="sheet-source">避難先の出典：大阪市大正区「大正区内の避難場所・防災マップ」</p>
+      <p>連絡先の出典：大阪市「大正区における水害ハザードマップ（音声読み上げ版）」　印刷日：<span id="sheet-date"></span>　防災ポケット</p>
+    </footer>
+  </article>
+</main>
+
+<footer class="site-foot">
+  <div class="site-foot-inner">
+    <p class="foot-warn">このサイトは事前準備用の参考情報です。実際の災害時は、大阪市・気象庁の最新情報と避難指示を優先してください。</p>
+    <nav aria-label="ページ一覧"><ul>
+      <li><a href="./">トップ</a></li>
+      <li><a href="shelters.html">避難先リスト</a></li>
+      <li><a href="quake.html">地震</a></li>
+      <li><a href="tsunami.html">津波・水害</a></li>
+      <li><a href="fire.html">火事</a></li>
+      <li><a href="typhoon.html">台風・大雨</a></li>
+      <li><a href="hazard.html">ハザードマップ</a></li>
+      <li><a href="levels.html">警戒レベル</a></li>
+      <li><a href="stock.html">備蓄リスト</a></li>
+      <li><a href="contacts.html">連絡先・安否確認</a></li>
+      <li><a href="sheet.html" aria-current="page">印刷シート</a></li>
+    </ul></nav>
+    <p class="foot-meta">避難先は大阪市の公式情報だけを載せ、施設ごとに出典と確認日を付けています。個人情報は扱いません。メモ欄に書いた内容は、この端末の中だけに保存されます。一度開いたページは、通信がなくても表示できます。</p>
+  </div>
+</footer>
+</body>
+</html>

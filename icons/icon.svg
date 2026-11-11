@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0A7D45"/>
+  <rect x="34" y="372" width="444" height="72" fill="#FFD60A"/>
+  <text x="256" y="318" text-anchor="middle" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, BIZ UDPGothic, Noto Sans JP, Yu Gothic, Meiryo, sans-serif" font-weight="900" font-size="250" fill="#FFFFFF">防</text>
+  <rect x="34" y="34" width="444" height="444" rx="70" fill="none" stroke="#FFFFFF" stroke-width="22"/>
+</svg>

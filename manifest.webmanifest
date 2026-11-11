@@ -1,0 +1,17 @@
+{
+  "name": "防災ポケット（大阪市大正区・鶴町）",
+  "short_name": "防災ポケット",
+  "description": "大阪市大正区（鶴町）の家族向け防災情報。災害ごとのまずやること、避難先、備蓄、連絡先。通信がなくても開けます。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#E7ECF1",
+  "theme_color": "#FFD60A",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

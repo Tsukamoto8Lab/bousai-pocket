@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>避難先リスト（大正区）｜防災ポケット</title>
+<meta name="description" content="大阪市大正区の災害時避難所・津波避難ビル・一時避難場所・広域避難場所。鶴町を先頭に表示。施設ごとに大阪市公式の出典と確認日つき。">
+<meta name="theme-color" content="#FFD60A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+<script src="assets/shelters.js" defer></script>
+</head>
+<body class="shelters-page">
+<div class="band" role="region" aria-label="最新の避難情報">
+  <div class="band-inner">
+    <span class="band-text"><span class="short">最新情報</span><span class="long">最新の避難情報はここで確認</span></span>
+    <a href="https://www.osaka.dmacs.jp/" target="_blank" rel="noopener">大阪防災アプリ</a>
+    <a href="https://www.osaka-bousai.net/27100/index.html" target="_blank" rel="noopener">おおさか防災ネット</a>
+  </div>
+</div>
+<div class="offline-note">通信なしで表示中です。前に保存した情報を表示しています。</div>
+<header class="site-head">
+  <div class="site-head-inner">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">防</span><span>防災ポケット<small>大阪市大正区・鶴町</small></span></a>
+    <nav class="head-links" aria-label="すぐ使うページ"><a href="shelters.html" aria-current="page">避難先</a><a href="contacts.html">連絡先</a></nav>
+  </div>
+</header>
+
+<main id="main">
+  <h1>避難先リスト（大正区）</h1>
+  <p class="lead" id="list-basis">大阪市の公式リストをもとに掲載しています。</p>
+
+  <div class="tabs" role="tablist" aria-label="避難先の種類" id="tabs"></div>
+  <p class="type-def" id="type-def" aria-live="polite"></p>
+
+  <div class="filters">
+    <div>
+      <span class="sr-only" id="area-label">町名で絞り込む</span>
+      <div class="chips" id="areas" role="group" aria-labelledby="area-label"></div>
+    </div>
+    <div>
+      <label for="q">施設名・住所で探す</label>
+      <input type="search" id="q" placeholder="例：鶴町小学校、鶴町4" autocomplete="off" enterkeyhint="search">
+    </div>
+  </div>
+
+  <p class="result-meta" id="result-meta" aria-live="polite"></p>
+  <div id="results"><p class="empty">読み込み中…</p></div>
+
+  <section class="section" id="excluded" hidden>
+    <h2>掲載していない施設</h2>
+    <ul class="dos" id="excluded-list"></ul>
+  </section>
+
+  <section class="sources" aria-labelledby="src-h">
+    <h2 id="src-h">このリストの出典</h2>
+    <ul id="src-list"></ul>
+    <p>避難先は大阪市が定期的に見直します（指定の追加・取り消しがあります）。出典と確認日のない施設は表示しません。</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="site-foot-inner">
+    <p class="foot-warn">このサイトは事前準備用の参考情報です。実際の災害時は、大阪市・気象庁の最新情報と避難指示を優先してください。</p>
+    <nav aria-label="ページ一覧"><ul>
+      <li><a href="./">トップ</a></li>
+      <li><a href="shelters.html">避難先リスト</a></li>
+      <li><a href="quake.html">地震</a></li>
+      <li><a href="tsunami.html">津波・水害</a></li>
+      <li><a href="fire.html">火事</a></li>
+      <li><a href="typhoon.html">台風・大雨</a></li>
+      <li><a href="hazard.html">ハザードマップ</a></li>
+      <li><a href="levels.html">警戒レベル</a></li>
+      <li><a href="stock.html">備蓄リスト</a></li>
+      <li><a href="contacts.html">連絡先・安否確認</a></li>
+      <li><a href="sheet.html">印刷シート</a></li>
+    </ul></nav>
+    <p class="foot-meta">避難先は大阪市の公式情報だけを載せ、施設ごとに出典と確認日を付けています。個人情報は扱いません。メモ欄に書いた内容は、この端末の中だけに保存されます。一度開いたページは、通信がなくても表示できます。</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1348 @@
+{
+  "schemaVersion": 1,
+  "region": {
+    "id": "taisho",
+    "name": "大阪市大正区",
+    "prefix": "大阪市大正区",
+    "priorityArea": "鶴町",
+    "areaOrder": [
+      "鶴町",
+      "泉尾",
+      "三軒家",
+      "千島",
+      "北村",
+      "小林",
+      "平尾",
+      "南恩加島",
+      "船町"
+    ]
+  },
+  "listTitle": "大正区内の避難場所・防災マップ（令和8年8月1日現在）",
+  "listAsOf": "2026-08-01",
+  "sources": [
+    {
+      "title": "大阪市大正区「大正区内の避難場所・防災マップ（令和8年8月1日現在）」",
+      "short": "大正区「避難場所・防災マップ」",
+      "url": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "use": "施設名・所在地・種別・電話番号"
+    },
+    {
+      "title": "大阪市危機管理室「津波避難ビル・水害時避難ビル一覧表（令和8年3月31日時点）」",
+      "short": "大阪市「津波避難ビル一覧表」",
+      "url": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "use": "避難可能時間・避難可能人数（津波避難ビルとしての値）"
+    }
+  ],
+  "excludedNotes": [
+    "埋蔵文化財鶴浜収蔵倉庫（もと鶴浜小学校）は令和7年5月31日付けで津波避難ビル・一時避難場所・災害時避難所の指定が取り消されたため掲載していません。"
+  ],
+  "printDefaults": [
+    "sh10",
+    "tb19",
+    "tp20"
+  ],
+  "facilities": [
+    {
+      "id": "wa01",
+      "name": "千島公園及び周辺一帯",
+      "address": null,
+      "area": "千島",
+      "types": [
+        "wide"
+      ],
+      "hours": null,
+      "capacity": null,
+      "mapQuery": "千島公園 大阪市大正区",
+      "note": "公式一覧に番地の記載はありません。公園内の昭和山は地震・津波等で崩れる可能性があるため、災害時に避難しないでください（大正区公式ページより）。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh01",
+      "name": "三軒家西小学校",
+      "address": "三軒家西1-20-26",
+      "area": "三軒家",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 542,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0022",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh02",
+      "name": "三軒家東小学校",
+      "address": "三軒家東2-12-59",
+      "area": "三軒家",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 568,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-4508",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh03",
+      "name": "泉尾東小学校",
+      "address": "千島1-16-16",
+      "area": "千島",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1199,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0081",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh04",
+      "name": "泉尾北小学校",
+      "address": "泉尾2-21-24",
+      "area": "泉尾",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1039,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0028",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh05",
+      "name": "中泉尾小学校",
+      "address": "泉尾3-23-34",
+      "area": "泉尾",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1200,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0068",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh06",
+      "name": "北恩加島小学校",
+      "address": "泉尾5-17-31",
+      "area": "泉尾",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 784,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0020",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh07",
+      "name": "小林小学校",
+      "address": "小林東2-4-45",
+      "area": "小林",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1258,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6553-0010",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh08",
+      "name": "平尾小学校",
+      "address": "平尾2-21-28",
+      "area": "平尾",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 867,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-8600",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh09",
+      "name": "南恩加島小学校",
+      "address": "南恩加島3-6-11",
+      "area": "南恩加島",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 908,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0047",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh10",
+      "name": "鶴町小学校",
+      "address": "鶴町2-6-24",
+      "area": "鶴町",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 948,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0023",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh11",
+      "name": "大正東中学校",
+      "address": "三軒家東4-4-30",
+      "area": "三軒家",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1366,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0630",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh12",
+      "name": "大正北中学校",
+      "address": "北村3-1-1",
+      "area": "北村",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1598,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6554-6050",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh13",
+      "name": "大正中央中学校",
+      "address": "小林東3-23-5",
+      "area": "小林",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1048,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6552-6565",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh14",
+      "name": "大正西中学校",
+      "address": "南恩加島6-14-37",
+      "area": "南恩加島",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1393,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6551-0294",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh15",
+      "name": "泉尾工業高等学校",
+      "address": "泉尾5-16-7",
+      "area": "泉尾",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 6315,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6552-2221",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "sh16",
+      "name": "大正白稜高等学校",
+      "address": "泉尾3-19-50",
+      "area": "泉尾",
+      "types": [
+        "shelter",
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 3451,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "phone": "06-6552-0026",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb01",
+      "name": "ほくとクリニック病院",
+      "address": "三軒家西1-18-7",
+      "area": "三軒家",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 70,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb02",
+      "name": "大正ゆめの樹保育園",
+      "address": "三軒家西1-3-21",
+      "area": "三軒家",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 391,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb03",
+      "name": "ホテルソビアル大阪ドーム前",
+      "address": "三軒家東1-17-29",
+      "area": "三軒家",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 357,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb04",
+      "name": "市営泉尾第5住宅1号館",
+      "address": "泉尾7-12-1",
+      "area": "泉尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 832,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb05",
+      "name": "もと大正高等学校",
+      "address": "泉尾7-11-20",
+      "area": "泉尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 4046,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb06",
+      "name": "シティコート千島3丁目",
+      "address": "千島3-1-25",
+      "area": "千島",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 441,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb07",
+      "name": "市営北村住宅1号館",
+      "address": "北村2-14-1",
+      "area": "北村",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 311,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb08",
+      "name": "UR賃貸住宅〔千島団地5号棟〕",
+      "address": "千島2-4-5",
+      "area": "千島",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 752,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb09",
+      "name": "大正会館",
+      "address": "千島2-6-15",
+      "area": "千島",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 204,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb10",
+      "name": "大正スポーツセンター〔大正屋内プール(アゼリア大正)〕",
+      "address": "小林東3-3-25",
+      "area": "小林",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1490,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb11",
+      "name": "大正区ふれあい福祉センター",
+      "address": "小林西1-14-3",
+      "area": "小林",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "営業時間中（平日9:00〜19:00、土曜9:00〜17:30）",
+      "capacity": 73,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb12",
+      "name": "市営小林住宅1号館",
+      "address": "小林東3-22-1",
+      "area": "小林",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 414,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb13",
+      "name": "介護老人保健施設 愛の里",
+      "address": "小林東2-6-14",
+      "area": "小林",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 177,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb14",
+      "name": "特別養護老人ホーム 悠の里",
+      "address": "小林東2-6-15",
+      "area": "小林",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 400,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb15",
+      "name": "市営小林住宅2号館",
+      "address": "平尾4-1-2",
+      "area": "平尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 456,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb16",
+      "name": "市営小林住宅5号館",
+      "address": "平尾2-23-5",
+      "area": "平尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 229,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb17",
+      "name": "市営鶴町第8住宅1号館",
+      "address": "鶴町1-12-1",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 456,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb18",
+      "name": "市営鶴町第9住宅1号館",
+      "address": "鶴町2-20-34",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 568,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb19",
+      "name": "イケア鶴浜",
+      "address": "鶴町2-24-55",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 28000,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb20",
+      "name": "市営鶴町第3住宅1号館",
+      "address": "鶴町3-22-1",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 448,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb21",
+      "name": "大阪シティバス 鶴町車庫",
+      "address": "鶴町4-11-55",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 508,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb22",
+      "name": "市営鶴町住宅1号館",
+      "address": "鶴町4-2-1",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1967,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb23",
+      "name": "つるまち海の風こども園",
+      "address": "鶴町4-8-4",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 217,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "市の一覧表（令和8年3月31日時点）では「つるまち海の風保育園」と表記されています。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb24",
+      "name": "介護付有料老人ホーム スローライフおかじま",
+      "address": "南恩加島5-4-5",
+      "area": "南恩加島",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 273,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb25",
+      "name": "市営鶴町第4住宅1号館",
+      "address": "鶴町4-10-1",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 474,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb26",
+      "name": "市営鶴町住宅2号館",
+      "address": "鶴町4-3-2",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 1319,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb27",
+      "name": "介護付有料老人ホーム プレザンメゾン大正泉尾",
+      "address": "泉尾1-18-1",
+      "area": "泉尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 273,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb28",
+      "name": "市営鶴町第3住宅2号館",
+      "address": "鶴町3-23",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 750,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb29",
+      "name": "千本松大橋歩道部分",
+      "address": "南恩加島1-11",
+      "area": "南恩加島",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 893,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "橋の歩道部分です。市の一覧表では所在地を「南恩加島1-11先」と表記しています。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb30",
+      "name": "株式会社 藤井組",
+      "address": "小林東1-2-44",
+      "area": "小林",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "8:00〜17:00（土・日・祝日を除く）",
+      "capacity": 152,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb31",
+      "name": "大正くすのきクリニック",
+      "address": "泉尾1-30-5",
+      "area": "泉尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "営業時間中（月・水・金8:00〜22:00、火・木・土8:30〜14:30）",
+      "capacity": 231,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb32",
+      "name": "ウエスト大正（立体駐車場）",
+      "address": "平尾1-5-1",
+      "area": "平尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 2101,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb33",
+      "name": "介護老人保健施設 エバーグリーン",
+      "address": "泉尾2-20-4",
+      "area": "泉尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "8:00〜18:00",
+      "capacity": 577,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb34",
+      "name": "ロジポート大阪大正",
+      "address": "船町1-2-21",
+      "area": "船町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "8:30〜19:00（土・日・祝日を除く）",
+      "capacity": 1200,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb35",
+      "name": "市営鶴町第2住宅1号館",
+      "address": "鶴町1-17-1",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 709,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb36",
+      "name": "日商岩井泉尾マンション",
+      "address": "泉尾1-16-1、泉尾1-16-2",
+      "area": "泉尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 977,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "mapQuery": "大阪市大正区泉尾1-16-1",
+      "note": "1号棟・2号棟の2棟です。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb37",
+      "name": "もとサボイ恩加島味道館",
+      "address": "平尾5-2-1",
+      "area": "平尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "営業時間中（9:00〜21:00）",
+      "capacity": 1122,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "避難可能時間・人数は市の一覧表（令和8年3月31日時点、名称「サボイ恩加島味道館」）の値です。区の最新一覧では名称が「もと〜」に変わっているため、避難できる時間は区役所か現地の表示板で確認してください。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb38",
+      "name": "三栄建設鉄構事業本部事務所",
+      "address": "南恩加島6-2-21",
+      "area": "南恩加島",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "営業時間中（8:00〜19:00）",
+      "capacity": 207,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "市の一覧表（令和8年3月31日時点）では「三栄建設鉄構事業本部新事務所」と表記されています。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb39",
+      "name": "市営泉尾第4住宅5号館",
+      "address": "泉尾7-13-5",
+      "area": "泉尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 972,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb40",
+      "name": "市営鶴町住宅3号館",
+      "address": "鶴町4-3-3",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 768,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb41",
+      "name": "一般国道43号尻無川橋側歩道橋",
+      "address": "泉尾6",
+      "area": "泉尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 442,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "mapQuery": "大阪市大正区泉尾6 尻無川橋",
+      "note": "歩道橋です。避難可能人数442人は港区側と合わせた数です（市の一覧表より）。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb42",
+      "name": "市営鶴町第6住宅1号館",
+      "address": "鶴町4-11-1",
+      "area": "鶴町",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 677,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb43",
+      "name": "市営千島住宅1号館",
+      "address": "小林東2-3-1",
+      "area": "小林",
+      "types": [
+        "tsunami"
+      ],
+      "hours": "24時間",
+      "capacity": 972,
+      "detailSourceUrl": "https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000138/138173/tsunami.suigaiji_R080331.pdf",
+      "detailCheckedDate": "2026-11-12",
+      "note": "市の一覧表（令和8年3月31日時点）では「市営千鳥住宅1号館」と表記されています。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tb44",
+      "name": "手原産業倉庫大正センター",
+      "address": "平尾1-2-56",
+      "area": "平尾",
+      "types": [
+        "tsunami"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "市の一覧表（令和8年3月31日時点）に掲載がないため、避難可能時間・人数は確認できていません。区役所か現地の表示板で確認してください。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp01",
+      "name": "大正橋公園",
+      "address": "三軒家東1-1",
+      "area": "三軒家",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp02",
+      "name": "岩崎橋公園",
+      "address": "三軒家西1-7",
+      "area": "三軒家",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp03",
+      "name": "三軒家公園",
+      "address": "三軒家東2-12",
+      "area": "三軒家",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp04",
+      "name": "泉尾上公園",
+      "address": "泉尾1-29",
+      "area": "泉尾",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp05",
+      "name": "泉尾公園",
+      "address": "泉尾4-21",
+      "area": "泉尾",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp06",
+      "name": "泉尾中公園",
+      "address": "泉尾3-21",
+      "area": "泉尾",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp07",
+      "name": "泉尾浜公園",
+      "address": "泉尾7-17",
+      "area": "泉尾",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp08",
+      "name": "南泉尾公園",
+      "address": "千島1-16",
+      "area": "千島",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp09",
+      "name": "千林橋公園",
+      "address": "千島3-7",
+      "area": "千島",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp10",
+      "name": "北村公園",
+      "address": "北村2-16",
+      "area": "北村",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp11",
+      "name": "北村西児童遊園",
+      "address": "北村2-6",
+      "area": "北村",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp12",
+      "name": "小林公園",
+      "address": "小林東2-6",
+      "area": "小林",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp13",
+      "name": "小林南公園",
+      "address": "小林西2-16",
+      "area": "小林",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp14",
+      "name": "平尾公園",
+      "address": "平尾2-22",
+      "area": "平尾",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp15",
+      "name": "平尾亥開公園",
+      "address": "平尾1-11、南恩加島1-10",
+      "area": "平尾",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "mapQuery": "大阪市大正区平尾1-11 平尾亥開公園",
+      "note": "所在地が2か所に分かれて記載されています。",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp16",
+      "name": "南恩加島公園",
+      "address": "南恩加島1-13",
+      "area": "南恩加島",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp17",
+      "name": "南恩加島西公園",
+      "address": "南恩加島6-14",
+      "area": "南恩加島",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp18",
+      "name": "鶴町児童遊園",
+      "address": "鶴町1-7",
+      "area": "鶴町",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp19",
+      "name": "鶴町南公園",
+      "address": "鶴町1-19",
+      "area": "鶴町",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp20",
+      "name": "鶴町中央公園",
+      "address": "鶴町2-7",
+      "area": "鶴町",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    },
+    {
+      "id": "tp21",
+      "name": "鶴町北公園",
+      "address": "鶴町4-4",
+      "area": "鶴町",
+      "types": [
+        "temporary"
+      ],
+      "hours": null,
+      "capacity": null,
+      "note": "",
+      "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000385887.html",
+      "checkedDate": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "regions": [
+    {
+      "id": "taisho",
+      "name": "大阪市大正区",
+      "file": "data/shelters-taisho.json",
+      "default": true
+    }
+  ]
+}

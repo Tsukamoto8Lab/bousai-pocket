@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>備蓄リスト｜防災ポケット</title>
+<meta name="description" content="水は1人1日3L、食料は最低3日分・できれば1週間分。人数と日数で必要な量を計算。非常持ち出し袋と家の備蓄のチェックリスト（印刷できます）。">
+<meta name="theme-color" content="#FFD60A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+<script src="assets/stock.js" defer></script>
+</head>
+<body class="stock-page">
+<div class="band" role="region" aria-label="最新の避難情報">
+  <div class="band-inner">
+    <span class="band-text"><span class="short">最新情報</span><span class="long">最新の避難情報はここで確認</span></span>
+    <a href="https://www.osaka.dmacs.jp/" target="_blank" rel="noopener">大阪防災アプリ</a>
+    <a href="https://www.osaka-bousai.net/27100/index.html" target="_blank" rel="noopener">おおさか防災ネット</a>
+  </div>
+</div>
+<div class="offline-note">通信なしで表示中です。前に保存した情報を表示しています。</div>
+<header class="site-head">
+  <div class="site-head-inner">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">防</span><span>防災ポケット<small>大阪市大正区・鶴町</small></span></a>
+    <nav class="head-links" aria-label="すぐ使うページ"><a href="shelters.html">避難先</a><a href="contacts.html">連絡先</a></nav>
+  </div>
+</header>
+
+<main id="main">
+  <h1>備蓄リスト</h1>
+  <p class="lead">電気・ガス・水道が止まっても、家族が数日過ごせるだけの物を用意しておきます。</p>
+
+  <section class="section" aria-labelledby="aim">
+    <h2 id="aim">量の目安（国の基準）</h2>
+    <div class="facts">
+      <div class="fact water">
+        <p class="fact-k">💧 水</p>
+        <p class="fact-v">1人1日 3L</p>
+        <p class="fact-c">飲む水と、料理に使う水。トイレを流すなどの生活用水は別に必要です。</p>
+      </div>
+      <div class="fact">
+        <p class="fact-k">🍚 食料</p>
+        <p class="fact-v">最低3日分<small>・できれば1週間分</small></p>
+        <p class="fact-c">主食（ご飯・めん）とおかず（缶詰・レトルト）を組み合わせて1日3食。</p>
+      </div>
+      <div class="fact">
+        <p class="fact-k">🔥 カセットボンベ</p>
+        <p class="fact-v">1人1週間 約6本</p>
+        <p class="fact-c">カセットコンロで温かい物を食べるための燃料。火の気と直射日光を避けて保管。</p>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:12px">
+      <h3>ローリングストック</h3>
+      <p>ふだん食べている物を少し多めに買っておき、食べたら食べた分を買い足す方法です。これをくり返すと、いつも賞味期限の新しい備蓄が家にあります。</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="calc-h">
+    <h2 id="calc-h">かんたん計算機</h2>
+    <form class="calc" id="calc" onsubmit="return false">
+      <div class="calc-inputs">
+        <div class="field" style="margin-top:0">
+          <label for="people">人数</label>
+          <div class="stepper">
+            <button type="button" data-step="people:-1" aria-label="人数を1減らす">−</button>
+            <input type="number" id="people" inputmode="numeric" min="1" max="30" value="3">
+            <button type="button" data-step="people:1" aria-label="人数を1増やす">＋</button>
+          </div>
+        </div>
+        <div class="field" style="margin-top:0">
+          <label for="days">日数</label>
+          <div class="stepper">
+            <button type="button" data-step="days:-1" aria-label="日数を1減らす">−</button>
+            <input type="number" id="days" inputmode="numeric" min="1" max="30" value="3">
+            <button type="button" data-step="days:1" aria-label="日数を1増やす">＋</button>
+          </div>
+        </div>
+      </div>
+      <div class="day-presets" role="group" aria-label="日数をえらぶ">
+        <button type="button" class="chip" data-days="3">3日分（最低）</button>
+        <button type="button" class="chip" data-days="7">1週間分（できれば）</button>
+      </div>
+      <dl class="calc-out" aria-live="polite">
+        <div><dt>💧 水</dt><dd><span id="out-water">27</span>L<small id="out-bottles">2Lペットボトル 14本</small></dd></div>
+        <div><dt>🍚 食料</dt><dd><span id="out-meals">27</span>食<small>1人1日3食として</small></dd></div>
+        <div class="wide"><dt>🔥 カセットボンベ</dt><dd><span id="out-gas">3</span>本<small>1人1週間あたり約6本の目安で計算（端数は切り上げ）</small></dd></div>
+      </dl>
+      <p class="fac-qual" style="margin-top:8px">目安です。赤ちゃん・お年寄り・持病のある人の分や、ペットの分は別に考えてください。人数と日数は、この端末にだけ保存されます。</p>
+    </form>
+  </section>
+
+  <section class="section" aria-labelledby="bag-h">
+    <h2 id="bag-h">🎒 非常持ち出し袋（玄関に置くもの）</h2>
+    <p>リュックに入れ、すぐ持ち出せる所に。重すぎると逃げにくいので、持てる重さに絞ります。</p>
+    <ul class="checklist" data-list="bag" style="margin-top:10px">
+      <li><label><input type="checkbox" data-id="bag-water"><span>飲料水<small>500mlのペットボトルなど</small></span></label></li>
+      <li><label><input type="checkbox" data-id="bag-food"><span>すぐ食べられる物<small>乾パン・ビスケット・栄養補助食品など</small></span></label></li>
+      <li><label><input type="checkbox" data-id="bag-light"><span>懐中電灯<small>できれば1人に1つ</small></span></label></li>
+      <li><label><input type="checkbox" data-id="bag-radio"><span>携帯ラジオ</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-battery"><span>予備の電池・モバイルバッテリー</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-firstaid"><span>救急用品<small>ばんそうこう・包帯・消毒液</small></span></label></li>
+      <li><label><input type="checkbox" data-id="bag-medicine"><span>常備薬・持病の薬、お薬手帳のコピー</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-mask"><span>マスク・手の消毒液・体温計</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-toilet"><span>携帯トイレ</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-tissue"><span>ウェットティッシュ・ティッシュ・タオル</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-gloves"><span>軍手</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-rain"><span>雨がっぱ（レインウェア）</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-whistle"><span>笛（ホイッスル）<small>がれきの下などで助けを呼ぶため</small></span></label></li>
+      <li><label><input type="checkbox" data-id="bag-cash"><span>現金<small>公衆電話用に10円玉も</small></span></label></li>
+      <li><label><input type="checkbox" data-id="bag-id"><span>身分証・保険証のコピー</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-glasses"><span>予備のめがね・コンタクト</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-pen"><span>筆記用具・油性ペン</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-bags"><span>ポリ袋・ラップ</span></label></li>
+      <li><label><input type="checkbox" data-id="bag-blanket"><span>アルミ製の保温シート・カイロ</span></label></li>
+    </ul>
+    <p class="group-label">必要な人だけ</p>
+    <ul class="checklist" data-list="bag-extra">
+      <li><label><input type="checkbox" data-id="ex-elder"><span>お年寄り<small>入れ歯と洗浄剤・補聴器・杖・介護食・大人用紙パンツ</small></span></label></li>
+      <li><label><input type="checkbox" data-id="ex-baby"><span>赤ちゃん・子ども<small>粉ミルクか液体ミルク・哺乳瓶・離乳食・紙おむつ・おしりふき・抱っこひも</small></span></label></li>
+      <li><label><input type="checkbox" data-id="ex-women"><span>女性<small>生理用品・中身の見えないごみ袋・防犯ブザー</small></span></label></li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="home-h">
+    <h2 id="home-h">🏠 家に置く備蓄</h2>
+    <p>自宅で過ごす（在宅避難）ための物。ローリングストックで回します。</p>
+    <ul class="checklist" data-list="home" style="margin-top:10px">
+      <li><label><input type="checkbox" data-id="home-water"><span>飲料水<small>1人1日3L × 日数。上の計算機で確認</small></span></label></li>
+      <li><label><input type="checkbox" data-id="home-staple"><span>主食<small>アルファ米・パックご飯・めん類など</small></span></label></li>
+      <li><label><input type="checkbox" data-id="home-side"><span>おかず<small>缶詰・レトルト食品など</small></span></label></li>
+      <li><label><input type="checkbox" data-id="home-stove"><span>カセットコンロとボンベ</span></label></li>
+      <li><label><input type="checkbox" data-id="home-toilet"><span>携帯トイレ・簡易トイレ<small>水が止まるとトイレが流せません</small></span></label></li>
+      <li><label><input type="checkbox" data-id="home-paper"><span>トイレットペーパー・ティッシュ</span></label></li>
+      <li><label><input type="checkbox" data-id="home-wrap"><span>ラップ・ごみ袋</span></label></li>
+      <li><label><input type="checkbox" data-id="home-tank"><span>ポリタンク<small>給水所で水を受け取る・生活用水をためる</small></span></label></li>
+      <li><label><input type="checkbox" data-id="home-lantern"><span>懐中電灯・ランタン・電池</span></label></li>
+      <li><label><input type="checkbox" data-id="home-medicine"><span>常備薬・救急箱</span></label></li>
+      <li><label><input type="checkbox" data-id="home-extinguisher"><span>消火器</span></label></li>
+    </ul>
+    <div class="list-tools">
+      <button type="button" class="btn dark big" data-print>🖨️ チェックリストを印刷する</button>
+      <button type="button" class="btn big" id="clear-checks">チェックを全部外す</button>
+    </div>
+    <p class="fac-qual" style="margin-top:8px">チェックした内容は、この端末にだけ保存されます。</p>
+  </section>
+
+  <section class="sources" aria-labelledby="src">
+    <h2 id="src">出典</h2>
+    <ul>
+      <li><a class="print-url" href="https://www.kantei.go.jp/jp/headline/bousai/sonae.html" target="_blank" rel="noopener">首相官邸「災害への備え 事前にできること」</a>（水1人1日3L・3日分、1週間分が望ましい）</li>
+      <li><a class="print-url" href="https://www.kantei.go.jp/jp/content/000182715.pdf" target="_blank" rel="noopener">内閣府監修「災害の『備え』チェックリスト」（PDF）</a>（非常用持ち出し袋・備蓄品）</li>
+      <li><a class="print-url" href="https://www.maff.go.jp/j/zyukyu/anpo/pdf/gaido_160511_1.pdf" target="_blank" rel="noopener">農林水産省 家庭用食料品備蓄ガイド（PDF・平成26年2月発行）</a>（1日3食・カセットボンベ1週間6本程度）</li>
+      <li><a class="print-url" href="https://www.gov-online.go.jp/article/202103/entry-10236.html" target="_blank" rel="noopener">政府広報オンライン「今日からできる食品備蓄。ローリングストックの始め方」</a></li>
+      <li><a class="print-url" href="https://www.city.osaka.lg.jp/kikikanrishitsu/page/0000011873.html" target="_blank" rel="noopener">大阪市「市民防災マニュアル」</a>（非常持ち出し品・家庭に備えておくもの）</li>
+    </ul>
+    <p>確認日：2026年11月12日</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="site-foot-inner">
+    <p class="foot-warn">このサイトは事前準備用の参考情報です。実際の災害時は、大阪市・気象庁の最新情報と避難指示を優先してください。</p>
+    <nav aria-label="ページ一覧"><ul>
+      <li><a href="./">トップ</a></li>
+      <li><a href="shelters.html">避難先リスト</a></li>
+      <li><a href="quake.html">地震</a></li>
+      <li><a href="tsunami.html">津波・水害</a></li>
+      <li><a href="fire.html">火事</a></li>
+      <li><a href="typhoon.html">台風・大雨</a></li>
+      <li><a href="hazard.html">ハザードマップ</a></li>
+      <li><a href="levels.html">警戒レベル</a></li>
+      <li><a href="stock.html" aria-current="page">備蓄リスト</a></li>
+      <li><a href="contacts.html">連絡先・安否確認</a></li>
+      <li><a href="sheet.html">印刷シート</a></li>
+    </ul></nav>
+    <p class="foot-meta">避難先は大阪市の公式情報だけを載せ、施設ごとに出典と確認日を付けています。個人情報は扱いません。メモ欄に書いた内容は、この端末の中だけに保存されます。一度開いたページは、通信がなくても表示できます。</p>
+  </div>
+</footer>
+</body>
+</html>
